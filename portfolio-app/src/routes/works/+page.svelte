@@ -2,22 +2,13 @@
     import { onMount } from 'svelte';
     import { Card } from '$lib';
 
-    onMount(() => {
-        console.log("Home Page Loaded");
+    onMount (() => {
+        console.log("Works Page Loaded");
     });
 </script>
 
-<h1>Welcome to my portfolio website!</h1>
-
-<div class ="splash">
-    <div>
-        <img src="homeImage.jpg" alt="Man in yellow hoodie on his knee doing a cool pose outside in a LIDL carpark" width= 100%>
-    </div>
-    <div>
-        <p>Have a look around</p>
-    </div>
-    
-</div>
+<h1>My works</h1>
+<p>All my art is featured here</p>
 
 <!-- Gallery container-->
 <div class="gallery">
@@ -26,16 +17,13 @@
     <Card title="Card 3" description="This is the third card." />
     <Card title="Card 4" description="This is the fourth card." />
     <Card title="Card 5" description="This is the fifth card." />
-    <Card title="Card 6" description="This is the sixth card." />
 </div>
 
 <style>
-    /* splash screen styling */
-    .splash {
-        display:grid;
-        max-width: 100vw;
-        grid-template-columns: 3fr 1fr;
-    }
+    h1 {color: #28a745;}
+    p {font-size: 18px;}
+    a {color: #007bff; text-decoration: none }
+    a:hover { text-decoration: underline; }
 
     /* Grid layout for gallery*/
     .gallery {
