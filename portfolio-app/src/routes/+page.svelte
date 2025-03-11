@@ -7,13 +7,14 @@
     });
 </script>
 
-<h1>Welcome to my portfolio website!</h1>
+
 
 <div class ="splash">
     <div>
-        <img src="homeImage.jpg" alt="Man in yellow hoodie on his knee doing a cool pose outside in a LIDL carpark" width= 100%>
+        <img src="homeImage.jpg" alt="Man in yellow hoodie on his knee doing a cool pose outside in a LIDL carpark" id="splashImage">
     </div>
     <div>
+        <h1>Welcome to my portfolio website!</h1>
         <p>Have a look around</p>
     </div>
     
@@ -34,8 +35,27 @@
     .splash {
         display:grid;
         max-width: 100vw;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 6fr 4fr;
     }
+
+    #splashImage {
+        max-width: 100%;
+        position: relative;
+        left: -100px;
+        animation: linear;
+        animation: run;
+        animation-duration: 3s;
+    }
+
+@keyframes run {
+  0% {
+    transform: rotate(-2deg);
+    transform: translateX(-100%);
+  }
+  100% { 
+    transform: translateX(-1fr);
+   }
+}
 
     /* Grid layout for gallery*/
     .gallery {
