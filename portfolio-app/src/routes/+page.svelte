@@ -114,4 +114,5 @@
     :global(.gallery > .card:not(:first-child):not(:last-child)) {
         border-radius: 18px; /* Softens edges for middle cards */
     }
+    
 </style>

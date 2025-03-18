@@ -22,6 +22,5 @@
         padding: 2rem;
         text-align: center;
         color: white;
-        background-color:rgb(24, 23, 26);
     }
 </style>
