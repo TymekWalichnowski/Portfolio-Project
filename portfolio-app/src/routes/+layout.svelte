@@ -19,7 +19,6 @@
 
 <style>  
     main {
-        padding: 2rem;
         text-align: center;
         color: white;
     }

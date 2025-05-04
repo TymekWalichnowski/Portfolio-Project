@@ -7,48 +7,51 @@
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="placeholder.png" alt="Website Logo">
-        <h1>My Portfolio Website</h1>
+        <h1>Tymek W.</h1>
     </div>
 
     <!-- Navigation -->
     <Navigation />
 </header>
 
- 
-
-
 <style>
     /* Header Styling */
     header {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        background-color: var(--primary-color);
-        color: white;
+        align-items: center;
+        background: linear-gradient(to bottom right, var(--primary-color) 50%, transparent 50%), var(--primary-color);
+        color: rgb(0, 0, 0);
         padding: 1rem;
+        position: relative;
+        overflow: visible; 
+        font-family: 'Boldonse';
+
     }
 
     /* Logo Container */
     .logo {
         display: flex;
         align-items: center;
-    }
-
-    .logo img {
-        width: 50px;
-        margin-right: 0.625rem;
+        z-index: 1;
+        font-size: 2em;
     }
 
     /* Mobile: Center logo and stack items */
-    @media (max-width: 768px) {
+    @media (max-width: 980px) {
         header {
             flex-direction: column;
-            text-align:center
+            text-align:center;
+            clip-path: polygon(100% 0, 100% 76%, 0 76%, 0 0);
         }
 
         .logo {
             justify-content: center;
+            display:none;
         }
     }
+
+    @media (max-width: 600px) {
+
+}
 </style>

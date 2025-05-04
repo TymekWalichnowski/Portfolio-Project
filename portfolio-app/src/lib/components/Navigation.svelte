@@ -4,35 +4,32 @@
 
 <!-- Navigation Container-->
 <nav>
-    <!-- Burger menu button (visible on small screens)-->
-    <button class="burger" on:click={() => isOpen = !isOpen} aria-label="Toggle navigation">
-            ☰
-        </button>
-
     <!-- Navigation links-->
     <ul>
          <li><a href="/">Home</a></li>
          <li><a href="/works">Works</a></li>
          <li><a href="/about">About</a></li>
-         <li><a href="/contact">Contact</a></li>
+         <li><a href="/cv">CV</a></li>
         </ul>
 </nav>
 
 
 <style>
+    
     /* Base Navigation Styling */
-    .nav {
-        background-color: #ff00b3;
-        padding: 1rem;
+    nav {
         text-align: center;
+        
     }
+
     nav ul {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
-        gap: 20px; /* Adds equal spacing between items */
+        padding-right: 2rem;
+        font-size: 2em;
     }
     
     nav ul li {
@@ -41,30 +38,21 @@
     
     nav ul li a {
         text-decoration: none;
-        color: white;
+        color: rgb(0, 0, 0);
+        padding: 30px;
         font-weight: bold;
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
     }
 
-        /* 🍔 Burger Menu (Hidden on Large Screens) */
-        .burger {
-        display: none;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: white;
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
+    nav ul li a:hover {
+        color: #ffffff; /* Change text color to white */
+        background-color: #363636; /* Optional: Add a background color */
+        padding-bottom: 30px; /* Add extra padding at the bottom to extend downward */
+
     }
 
     /* Mobile Navigation: Show Burger Menu */
-    @media (max-width: 768px) {
-        .burger {
-            display: block; /* Show burger icon */
-            left: 90%;
-        }
-
+    @media (max-width: 980px) {
         .nav ul {
             display: none; /* Hide menu by default */
             flex-direction: column;
@@ -72,10 +60,12 @@
             top: 90px;
             left: 0;
             width: 100%;
-            background: #007bff;
+            background: #e5ff00;
             text-align: left;
             padding: 1rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            font-size: 2em;
         }
 
         .nav ul.open {
@@ -85,5 +75,17 @@
         .nav ul li {
             padding: 10px 20px;
         }
+    }
+
+    @media (max-width: 600px) {
+        nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-right: 2rem;
+        font-size: 1em;
+    }
     }
 </style>
