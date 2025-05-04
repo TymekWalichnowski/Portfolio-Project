@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     let isOpen = false; // Menu state (open/closed)
 </script>
 
@@ -39,15 +40,15 @@
     nav ul li a {
         text-decoration: none;
         color: rgb(0, 0, 0);
-        padding: 30px;
+        padding: 35px;
         font-weight: bold;
         transition: all 0.3s ease; /* Smooth transition for hover effect */
     }
 
     nav ul li a:hover {
         color: #ffffff; /* Change text color to white */
-        background-color: #363636; /* Optional: Add a background color */
-        padding-bottom: 30px; /* Add extra padding at the bottom to extend downward */
+        background-color: #141414; /* Optional: Add a background color */
+        padding-bottom: 35px; /* Add extra padding at the bottom to extend downward */
 
     }
 

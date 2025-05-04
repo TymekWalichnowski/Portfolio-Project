@@ -5,7 +5,7 @@
         console.log("Contact Page Loaded");
     });
 </script>
-
+<body>
     <div>
         <h1>CV</h1>
         <h2>Jobs</h2>
@@ -24,33 +24,27 @@
             </ul>
           </ul>
     </div>
-
-
+</body>
 <style>
-    html {
-        height:auto;
-        background: #131313;
-        background: linear-gradient(180deg,rgba(19, 19, 19, 1) 0%, rgb(24, 3, 255) 100%);
+
+    body {
+        height:100%;
+        background: linear-gradient(180deg,rgba(19, 19, 19, 1) 0%, rgb(29, 37, 33) 100%);
     }
 
     h1 {font-size: 5em;
         color:#ffffff;
         padding-top: 2%;
         padding-bottom: 1%;
-        filter: drop-shadow(0 0 35px #000000); 
+        filter: drop-shadow(0 0 35px #c4c4c477); 
     }
 
-    p {
-        font-size: 1.5em;
-        padding-bottom: 2%;
-    }
-    
     h2 {
         font-size: 5em;
-
         padding-bottom: 2%;
         padding-left: 5%;
         text-align: left;
+        filter: drop-shadow(0 0 35px #c4c4c477); 
     }
 
     ul {
@@ -63,7 +57,6 @@
         padding-left: 5%;
     }
 
-
     .nestedlist {
         padding-left: 10%;
     }
@@ -72,13 +65,4 @@
         padding-bottom: 4%;
     }
 
-    @media (max-width: 980px) {
-        
-        }
-
-    @media (max-width: 600px) {
-
-
-
-    }
 </style>

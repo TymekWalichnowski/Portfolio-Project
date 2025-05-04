@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     // Props allow customization of card title and description
     export let title = "Card Title";
     export let description = "This is a brief description of the card.";

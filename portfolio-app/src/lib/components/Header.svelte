@@ -1,9 +1,12 @@
 <script>
+    import { base } from '$app/paths';
     // import Navigation.svelte from lib folder
     import { Navigation } from "$lib"
 </script>
 
-
+<div>
+    
+</div>
 <header>
     <!-- Logo -->
     <div class="logo">
@@ -20,13 +23,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(to bottom right, var(--primary-color) 50%, transparent 50%), var(--primary-color);
+        background: #d9c300;
+        background: linear-gradient(270deg, rgb(233, 210, 0) 0%, rgb(255, 230, 4) 15%, rgb(255, 227, 45) 60%, rgba(255, 245, 153, 1) 100%);
         color: rgb(0, 0, 0);
         padding: 1rem;
         position: relative;
-        overflow: visible; 
         font-family: 'Boldonse';
-
+        clip-path: polygon(100% 0, 100% 69%, 25% 69%, 0 100%, 0 0);
     }
 
     /* Logo Container */
@@ -34,7 +37,10 @@
         display: flex;
         align-items: center;
         z-index: 1;
-        font-size: 2em;
+        font-size: 1.5vw;
+        transform: rotate(-5deg);
+        padding-bottom: 1rem;
+        
     }
 
     /* Mobile: Center logo and stack items */
