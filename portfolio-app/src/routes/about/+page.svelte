@@ -7,8 +7,6 @@
     });
 </script>
 
-<html lang="en">
-<body>
     <!-- About section with named grid areas -->
     <div class= "about-container">
         <div id =about-image-container>
@@ -32,8 +30,7 @@
             </ul>
         </div>
     </div>
-</body>
-</html>
+
 <style>
     
     body {
