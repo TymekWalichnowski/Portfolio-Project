@@ -7,7 +7,7 @@
 
 
 // navigate to our work page
-goto(`${base}/work`);
+goto(`${base}/works`);
 // navigate to our about page
 goto(`${base}/about`);
     onMount(() => {
