@@ -31,9 +31,6 @@
     <Lightbox title="3D Concept Piece"><img src="works\zanyhijinx2.png" alt=" "></Lightbox>
 </div>
 
-
-
-
 <style>
     h1 {
         font-size: 5em;
@@ -55,12 +52,6 @@
         margin:auto;
     }
 
-    /* Apply a hover effect: spotlight effect on the hovered card */
-    .card:hover {
-        transform: scale(1.1); /* Scale up the hovered card */
-        z-index: 1; /* Bring it to the front */
-    }
-
     .gallery img {
         display: flex;
         flex-direction: column;
@@ -79,6 +70,8 @@
     .gallery img:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 15px rgba(230, 230, 230, 0.15);
+        transform: scale(1.1); /* Scale up the hovered card */
+        z-index: 1; /* Bring it to the front */
     }
 
     @media (max-width: 600px) {
