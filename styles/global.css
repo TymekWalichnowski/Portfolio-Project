@@ -1,0 +1,82 @@
+
+
+/* defining root css */
+:root {
+    --primary-color: #ffe600;
+    --secondary-color: #ffe81a;
+    --background-color: rgb(24, 23, 26);
+    --text-color: #213547;
+    --font-family: 'Inter', system-ui, sans-serif;
+    --base-font-size: 16px;
+}
+
+/* using wildcard? for consistent styling across all browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+    margin:0;
+}
+
+/* headings */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+/* a tag? */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* a tag hover? */
+a:hover {
+    text-decoration: underline;
+}
+
+/* container css */
+.container { 
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
+
+/* source-sans-pro-latin-900-normal */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/source-sans-pro@latest/latin-900-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/source-sans-pro@latest/latin-900-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+
+  /* boldonse-latin-400-normal */
+@font-face {
+    font-family: 'Boldonse';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/boldonse@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/boldonse@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+
+/* press-start-2p-latin-400-normal */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/press-start-2p@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/press-start-2p@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
