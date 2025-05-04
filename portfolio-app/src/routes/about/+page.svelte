@@ -1,7 +1,7 @@
 <script>
-    import { base } from '$app/paths';
     import { onMount } from 'svelte';
-    
+    import { base } from '$app/paths';
+
     onMount (() => {
         console.log("About Page Loaded");
     });
@@ -12,7 +12,7 @@
     <!-- About section with named grid areas -->
     <div class= "about-container">
         <div id =about-image-container>
-            <img src="{base}/real/20220731_011034.jpg" alt="A young bespectacled man adjusting a suit with a hawaiian shirt-tie combo underneath, he looks at the camera with a smirk" class="about-image">
+            <img src="{base}/20220731_011034.jpg" alt="A young bespectacled man adjusting a suit with a hawaiian shirt-tie combo underneath, he looks at the camera with a smirk" class="about-image">
         </div>
         
         <div class="about-text">

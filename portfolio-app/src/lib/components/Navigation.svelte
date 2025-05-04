@@ -1,5 +1,6 @@
 <script>
     import { base } from '$app/paths';
+
     let isOpen = false; // Menu state (open/closed)
 </script>
 

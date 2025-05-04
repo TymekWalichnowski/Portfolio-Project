@@ -1,15 +1,10 @@
 <script>
-    import { base } from '$app/paths';
     import { goto } from '$app/navigation';
+    import { base } from '$app/paths';
     import { onMount } from 'svelte';
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     import '@splidejs/svelte-splide/css';
 
-
-// navigate to our work page
-goto(`${base}/works`);
-// navigate to our about page
-goto(`${base}/about`);
     onMount(() => {
         console.log("Home Page Loaded");
     });
@@ -18,7 +13,7 @@ goto(`${base}/about`);
 
 <div class ="splash">
     <div>
-        <img src="{base}works\godotfire.gif" alt="gif of a low poly campfire scene in the woods" id="splashImage">
+        <img src="{base}/godotfire.gif" alt="gif of a low poly campfire scene in the woods" id="splashImage">
     </div>
     <div class = "splashtext">
         <h1 >Welcome to my Portfolio!</h1>
@@ -36,22 +31,22 @@ goto(`${base}/about`);
  autoplay: true , interval: 3000, autoWidth: true, focus: 'center', gap: '5rem'
 } } aria-label="Svelte Splide Example">
      <SplideSlide>
-        <img class ="slideImage" src="{base}\works\easternskyway1.png" alt="white low-poly highway amidst pink clouds with floating diamonds on square pillars"/>
+        <img class ="slideImage" src="{base}/easternskyway1.png" alt="white low-poly highway amidst pink clouds with floating diamonds on square pillars"/>
       </SplideSlide>
     <SplideSlide>
-        <img class ="slideImage" src="{base}works\animationCharacterFinal.png" alt="robot in street clothes shooting a gun and vaulting in an urban environment"/>
+        <img class ="slideImage" src="{base}/animationCharacterFinal.png" alt="robot in street clothes shooting a gun and vaulting in an urban environment"/>
     </SplideSlide>
     <SplideSlide>
-        <img class ="slideImage" src="{base}works\lemoncurator.png" alt="low poly 3d model of a cute lemon character composed of floating limbs"/>
+        <img class ="slideImage" src="{base}/lemoncurator.png" alt="low poly 3d model of a cute lemon character composed of floating limbs"/>
     </SplideSlide>
     <SplideSlide>
-      <img class ="slideImage" src="{base}\works\zanyhijinx2.png" alt="90s cgi orange/teal checkered hillscape with floating pink cones and a big sunset"/>
+      <img class ="slideImage" src="{base}/zanyhijinx2.png" alt="90s cgi orange/teal checkered hillscape with floating pink cones and a big sunset"/>
     </SplideSlide>
     <SplideSlide>
-        <img class ="slideImage" src="{base}works\watertest1.png" alt="low poly 3d art of a rat character standing at a dock at daytime and smoking a cigarette"/>
+        <img class ="slideImage" src="{base}/watertest1.png" alt="low poly 3d art of a rat character standing at a dock at daytime and smoking a cigarette"/>
     </SplideSlide>
     <SplideSlide>
-        <img class ="slideImage" src="{base}\works\moleranged3.png" alt="low poly mole character wearing a welding mask, is holding dynamite and also has some strapped to its belt"/>
+        <img class ="slideImage" src="{base}/moleranged3.png" alt="low poly mole character wearing a welding mask, is holding dynamite and also has some strapped to its belt"/>
       </SplideSlide>
 
   </Splide>
@@ -62,7 +57,7 @@ goto(`${base}/about`);
         <h2>Projects I've worked on:</h2>
     </div>
     <div class="projectshowcase">
-        <img src="{base}games\rhythmgamevid.gif" alt="gif of a rhythm game, beats are being both missed and hit, there is a man on a tv in the top right making expressions">
+        <img src="{base}/rhythmgamevid.gif" alt="gif of a rhythm game, beats are being both missed and hit, there is a man on a tv in the top right making expressions">
         <div>
             <h3>Rhythm Game:</h3>
             <ul>
@@ -82,11 +77,11 @@ goto(`${base}/about`);
                 <li>Coded entirely with C++ in SFML</li>
             </ul>
         </div>
-        <img src="{base}games\versusroulette.png" alt="two robots face off against one another in a dingy room, they are playing a variant of russian roulette but with a taser">
+        <img src="{base}/versusroulette.png" alt="two robots face off against one another in a dingy room, they are playing a variant of russian roulette but with a taser">
     </div>
 
     <div class="projectshowcase">
-        <img src="{base}games\rushtoriches.png" alt="there is a large pier with various colourful buildings, there is a menu with the options for 'profit' 'stock market' & 'view my stocks'">
+        <img src="{base}/rushtoriches.png" alt="there is a large pier with various colourful buildings, there is a menu with the options for 'profit' 'stock market' & 'view my stocks'">
         <div>
             <h3>Rush to Riches: Before the Bubble Bursts:</h3>
             <ul>
@@ -97,8 +92,8 @@ goto(`${base}/about`);
         </div>
     </div>
     <div id="endspace">
-        <button on:click={() => goto('/works')}>See my other works!</button>
-        <button on:click={() => goto('/about')}>Contact Me!</button>
+        <button on:click={() => goto(`${base}/works`)}>See my other works!</button>
+        <button on:click={() => goto(`${base}/about`)}>Contact Me!</button>
     </div>
 </div>
 

@@ -16,11 +16,10 @@
 <!-- Footer -->
 <Footer />
 
-
 <style>  
     main {
         text-align: center;
         color: white;
-        background-color: var(--background-color:);
+
     }
 </style>

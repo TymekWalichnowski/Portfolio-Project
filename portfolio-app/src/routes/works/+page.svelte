@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { Card } from '$lib';
+    import { base } from '$app/paths';
     import { Lightbox, LightboxGallery, GalleryImage, GalleryThumbnail, i18n  } from 'svelte-lightbox';
 
     onMount (() => {
@@ -14,26 +14,26 @@
 
 <!-- Gallery container-->
 <div class="gallery">
-    <Lightbox title="Character Design for Animation"> <img src="works\animationCharacterFinal.png" alt="robot in street clothes shooting a gun and vaulting in an urban environment" ></Lightbox>
-    <Lightbox title="Limited Palette Character Design"><img src="works\colourpalette5.png" alt="robed man in golden mask with blades extending out is submerged in a purple nebula"></Lightbox>
-    <Lightbox title="Game-Ready Pixel Art Sprite"><img src="works\AllyUpIdle.gif" alt="an orange pixel art space jet-fighter thrusts forward"></Lightbox>
-    <Lightbox title="3D Concept Piece"><img src="works\easternskyway1.png" alt="white low-poly highway amidst pink clouds with floating diamonds on square pillars"></Lightbox>
-    <Lightbox title="Concept Art for Mobile Game"><img src="works\molegame concept art.png" alt="various character/building/enemy/world concepts for a game where western-themed miners face off against giant enemy mole characters"></Lightbox>
-    <Lightbox title="Cover Art For Board Game"><img src="works\wonderlandwars1.png" alt="board game cover of various alice in wonderland characters fighting over the table"></Lightbox>
-    <Lightbox title="Marshland Concept Art"><img src="works\reeds1.png" alt="A marshland of teal water and orange reeds, the sky shares the same colours and there is a cracked monument of a sphere situated in the middle of the composition"></Lightbox>
-    <Lightbox title="Concept Art"><img src="works\PI01.png" alt="a black figure stands alone in a bright crimson-yellow subway, there is an advertisement of an octopus in the background"></Lightbox>
-    <Lightbox title="Self Portrait"><img src="works\selfportrait.png" alt="a black and white self portrait of a teenager looking confused at the camera"></Lightbox>
-    <Lightbox title="Low-Poly 3D Tree"><img src="works\lowpolytree.png" alt="a low poly tree with one branch sticking out"></Lightbox>
-    <Lightbox title="Full Character Walk Cycle"><img src="\works\CharacterWalkCycle.gif" alt="a sad-looking purple humanoid monster with dangly ears and a yellow chest-gemstone"></Lightbox>
-    <Lightbox title="Realistic Apple Painting"><img src="works\ApplePainting.jpg" alt="realistic painting of an apple"></Lightbox>
-    <Lightbox title="Low-Poly 3D Character Model"><img src="works\lemoncurator.png" alt="low poly 3d model of a cute lemon character composed of floating limbs"></Lightbox>
-    <Lightbox title="Low-Poly 3D Character Model"><img src="works\moleranged3.png" alt="low poly mole character wearing a welding mask, is holding dynamite and also has some strapped to its belt"></Lightbox>
-    <Lightbox title="2D Illustration"><img src="works\lifeordeath.png" alt="a masked cat humanoid is jumping from rooftop to rooftop as two masked guards chase them, the scene is entirely shades of red aside from a few white highlights"></Lightbox>
-    <Lightbox title="3D Concept Piece"><img src="works\watertest1.png" alt="low poly 3d art of a rat character standing at a dock at daytime and smoking a cigarettes"></Lightbox>
-    <Lightbox title="Character Design For Animation"><img src="works\turnaround1.png" alt="a 2D turnaround of a sad-looking purple humanoid monster with dangly ears and a yellow chest-gemstone"></Lightbox>
-    <Lightbox title="Game-Ready Pixel Art Sprite"><img src="works\EnemyDownExpire.gif" alt="a green pixel art brain alien with one red eye and four blue claws looks shocked before exploding into green goo"></Lightbox>
-    <Lightbox title="3D Concept Piece"><img src="works\zanyhijinx2.png" alt="90s cgi orange/teal checkered hillscape with floating pink cones and a big sunset"></Lightbox>
-    <Lightbox title="Game-Ready Pixel Art Sprite"><img src="\works\PowerUpInvincibility.gif" alt="pixel art of a yellow star jumping up and down and sparkling"></Lightbox>
+    <Lightbox title="Character Design for Animation"> <img src="{base}/animationCharacterFinal.png" alt="robot in street clothes shooting a gun and vaulting in an urban environment" ></Lightbox>
+    <Lightbox title="Limited Palette Character Design"><img src="{base}/colourpalette5.png" alt="robed man in golden mask with blades extending out is submerged in a purple nebula"></Lightbox>
+    <Lightbox title="Game-Ready Pixel Art Sprite"><img src="{base}/AllyUpIdle.gif" alt="an orange pixel art space jet-fighter thrusts forward"></Lightbox>
+    <Lightbox title="3D Concept Piece"><img src="{base}/easternskyway1.png" alt="white low-poly highway amidst pink clouds with floating diamonds on square pillars"></Lightbox>
+    <Lightbox title="Concept Art for Mobile Game"><img src="{base}/molegame concept art.png" alt="various character/building/enemy/world concepts for a game where western-themed miners face off against giant enemy mole characters"></Lightbox>
+    <Lightbox title="Cover Art For Board Game"><img src="{base}/wonderlandwars1.png" alt="board game cover of various alice in wonderland characters fighting over the table"></Lightbox>
+    <Lightbox title="Marshland Concept Art"><img src="{base}/reeds1.png" alt="A marshland of teal water and orange reeds, the sky shares the same colours and there is a cracked monument of a sphere situated in the middle of the composition"></Lightbox>
+    <Lightbox title="Concept Art"><img src="{base}/PI01.png" alt="a black figure stands alone in a bright crimson-yellow subway, there is an advertisement of an octopus in the background"></Lightbox>
+    <Lightbox title="Self Portrait"><img src="{base}/selfportrait.png" alt="a black and white self portrait of a teenager looking confused at the camera"></Lightbox>
+    <Lightbox title="Low-Poly 3D Tree"><img src="{base}/lowpolytree.png" alt="a low poly tree with one branch sticking out"></Lightbox>
+    <Lightbox title="Full Character Walk Cycle"><img src="{base}/CharacterWalkCycle.gif" alt="a sad-looking purple humanoid monster with dangly ears and a yellow chest-gemstone"></Lightbox>
+    <Lightbox title="Realistic Apple Painting"><img src="{base}/ApplePainting.jpg" alt="realistic painting of an apple"></Lightbox>
+    <Lightbox title="Low-Poly 3D Character Model"><img src="{base}/lemoncurator.png" alt="low poly 3d model of a cute lemon character composed of floating limbs"></Lightbox>
+    <Lightbox title="Low-Poly 3D Character Model"><img src="{base}/moleranged3.png" alt="low poly mole character wearing a welding mask, is holding dynamite and also has some strapped to its belt"></Lightbox>
+    <Lightbox title="2D Illustration"><img src="{base}/lifeordeath.png" alt="a masked cat humanoid is jumping from rooftop to rooftop as two masked guards chase them, the scene is entirely shades of red aside from a few white highlights"></Lightbox>
+    <Lightbox title="3D Concept Piece"><img src="{base}/watertest1.png" alt="low poly 3d art of a rat character standing at a dock at daytime and smoking a cigarettes"></Lightbox>
+    <Lightbox title="Character Design For Animation"><img src="{base}/turnaround1.png" alt="a 2D turnaround of a sad-looking purple humanoid monster with dangly ears and a yellow chest-gemstone"></Lightbox>
+    <Lightbox title="Game-Ready Pixel Art Sprite"><img src="{base}/EnemyDownExpire.gif" alt="a green pixel art brain alien with one red eye and four blue claws looks shocked before exploding into green goo"></Lightbox>
+    <Lightbox title="3D Concept Piece"><img src="{base}/zanyhijinx2.png" alt="90s cgi orange/teal checkered hillscape with floating pink cones and a big sunset"></Lightbox>
+    <Lightbox title="Game-Ready Pixel Art Sprite"><img src="{base}/PowerUpInvincibility.gif" alt="pixel art of a yellow star jumping up and down and sparkling"></Lightbox>
 </div>
 <style>
     h1 {
